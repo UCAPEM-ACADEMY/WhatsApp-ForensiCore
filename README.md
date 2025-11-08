@@ -17,25 +17,24 @@ El proyecto se enfoca en la **integridad probatoria** (ISO 27037) y la **trazabi
 
 La interfaz se estructura en cuatro módulos funcionales, cada uno diseñado para cumplir una fase crítica del proceso forense.
 
-### 1. Módulo de Adquisición y Conversión (Frame de Licenciamiento y Configuración)
+### 1. Módulo de Adquisición y Conversión
 Este módulo se enfoca en la **preparación y la seguridad del caso**:
-* **Licenciamiento Criptográfico:** Implementa la librería `cryptography` con cifrado Fernet para proteger el acceso a la aplicación y vincular el uso a un registro.
 * **Gestión de Caso:** Permite al perito establecer la información básica del caso (Nombre del Perito, Nombre del Caso) que luego se integrará automáticamente en el Reporte Forense.
 * **Manejo de Base de Datos:** Permite la carga de archivos `msgstore.db` (bases de datos) y la gestión del proceso de descifrado.
 
-### 2. Módulo de Análisis y Recuperación (Parser Module)
+### 2. Módulo de Análisis y Recuperación
 El núcleo del análisis forense. Este módulo procesa la base de datos para construir una línea de tiempo completa y detallada:
 * **Extracción de Eventos AVE:** Identifica y recupera registros de mensajes que han sido **eliminados, editados o marcados como anulados**, esenciales para la investigación.
 * **Consolidación de Datos:** Combina información de múltiples tablas (mensajes, llamadas, participantes) para presentar una vista unificada y cronológica de la actividad del usuario.
 * **Trazabilidad:** Procesa los metadatos de los archivos de base de datos para asegurar el cumplimiento de la **Cadena de Custodia**.
 
-### 3. Módulo de Reportes Forenses (Report Module)
+### 3. Módulo de Reportes Forenses
 Este módulo es responsable de la documentación y presentación final de la evidencia, siguiendo un estándar de calidad judicial:
 * **Generación PDF:** Utiliza la librería **ReportLab** para generar reportes estructurados en formato PDF, listos para ser presentados en un tribunal.
 * **Exportación de Datos Crudos:** Permite exportar la línea de tiempo completa a formatos planos como **CSV**, facilitando la integración con otras herramientas forenses (ej., Nuix, EnCase).
 * **Auditoría de Acciones:** Incluye un **Log de Auditoría** que registra todas las acciones tomadas por el perito dentro de la herramienta, asegurando la trazabilidad total (ISO 27043).
 
-### 4. Módulo de Interpretación con IA (Gemini AI Frame)
+### 4. Módulo de Interpretación con IA
 Integración de la **Inteligencia Artificial** para soporte en la toma de decisiones e interpretación de grandes volúmenes de datos:
 * **Análisis Rápido:** Permite al perito enviar fragmentos de conversaciones o líneas de tiempo consolidadas a la API de **Google Gemini** para obtener resúmenes ejecutivos, análisis de sentimientos o la identificación de patrones de actividad sospechosa.
 * **Generación de Conclusiones:** Asiste en la redacción de conclusiones forenses basadas en el análisis de texto.
@@ -43,14 +42,16 @@ Integración de la **Inteligencia Artificial** para soporte en la toma de decisi
 
 ---
 
-## 💻 Requisitos Técnicos y Compilación
+## 💻 Requisitos Técnicos Mínimos
 
-Este proyecto está construido en Python con una interfaz gráfica basada en **CustomTkinter**.
+Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o como binario compilado (si se utiliza la versión pre-empaquetada), se requieren los siguientes componentes:
 
-### 1. Entorno y Dependencias
+### Requisitos de Software (Windows, macOS, Linux)
 
-Para compilar o ejecutar desde el código fuente, instale las siguientes dependencias:
+| Componente | Requisito Mínimo | Notas |
+| :--- | :--- | :--- |
+| **Sistema Operativo** | Windows (64-bit), macOS (64-bit), Distribuciones Linux modernas. | Soporte nativo para Python y librerías C/C++. |
+| **Python** | Python 3.10 o superior (versión estable). | Requerido para ejecutar el código fuente. |
+| **Acceso a Internet** | Requerido | Esencial para las consultas al **Módulo de Interpretación con AI (Gemini)**. |
 
-```bash
-# Nuitka (Compilación), CustomTkinter (GUI), Google AI, ReportLab, Criptografía
-python3 -m pip install nuitka customtkinter pillow google-genai cryptography reportlab
+
