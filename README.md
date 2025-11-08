@@ -7,7 +7,7 @@
 
 ## 🛡️ Descripción y Valor Estratégico
 
-**WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de bases de datos de WhatsApp (Android).
+**WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de Archivos Incrementales de WhatsApp (Android).
 
 El proyecto se enfoca en la **integridad probatoria** (ISO 27037) y la **trazabilidad del proceso** (ISO 27043), proporcionando a peritos judiciales y analistas una cadena de custodia clara, desde el descifrado hasta la generación del reporte final. Su arquitectura modular permite un análisis profundo, incluyendo la **recuperación de eventos de alto valor probatorio (AVE)** como mensajes eliminados y ediciones de contenido.
 
