@@ -6,7 +6,7 @@
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
 <div align="center">
-  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="600"/>
+  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="800"/>
 </div>
 
 ## 🛡️ Descripción y Valor Estratégico
