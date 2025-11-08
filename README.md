@@ -5,6 +5,10 @@
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey.svg)]()
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
+<div align="center">
+  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="600"/>
+</div>
+
 ## 🛡️ Descripción y Valor Estratégico
 
 **WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de Archivos Incrementales de WhatsApp (Android).
@@ -20,7 +24,7 @@ La interfaz se estructura en cuatro módulos funcionales, cada uno diseñado par
 ### 1. Módulo de Adquisición y Conversión
 Este módulo se enfoca en la **preparación y la seguridad del caso**:
 * **Gestión de Caso:** Permite al perito establecer la información básica del caso (Nombre del Perito, Nombre del Caso) que luego se integrará automáticamente en el Reporte Forense.
-* **Manejo de Base de Datos:** Permite la carga de archivos `msgstore.db` (bases de datos) y la gestión del proceso de descifrado.
+* **Manejo de Base de Datos y Archivos Incrementales:** Permite la carga de archivos `msgstore.db` y `msgstore-increment-xx.db` (bases de datos y archivos incrementales desencriptadas) y la gestión del proceso de extracción de indicios.
 
 ### 2. Módulo de Análisis y Recuperación
 El núcleo del análisis forense. Este módulo procesa la base de datos para construir una línea de tiempo completa y detallada:
