@@ -58,7 +58,7 @@ Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o
 
 ## 📜 Licencia y Uso
 
-Este software es de **Uso Gratuito (FREE FOR USE)** para fines de desarrollo y educativos.
+Este software es de **Uso Gratuito (FREE FOR USE)** para fines educativos.
 
 **IMPORTANTE (USO PROFESIONAL):** Si el uso de esta herramienta será de carácter **profesional, pericial o comercial**, el usuario deberá realizar una **donación de apoyo** al proyecto. Una vez confirmada la donación, se le enviará el **código de registro** correspondiente, el cual activa el soporte técnico y el uso formal de la aplicación.
 
