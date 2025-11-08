@@ -66,3 +66,7 @@ Este software es de **Uso Gratuito (FREE FOR USE)** para fines educativos.
 
 **Contacto:** Para soporte avanzado, licencias de usuario registrado o información sobre donaciones, por favor contacte a `support@ucapem.group`.
 
+
+
+
+Donaciones: https://www.paypal.com/ncp/payment/NFEJUW3KN82WG
