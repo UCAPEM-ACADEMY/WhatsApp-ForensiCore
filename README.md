@@ -58,8 +58,11 @@ Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o
 
 ## 📜 Licencia y Uso
 
-Este software es de **Uso Gratuito (FREE FOR USE)** para fines de desarrollo, educativos y profesionales.
+Este software es de **Uso Gratuito (FREE FOR USE)** para fines de desarrollo y educativos.
+
+**IMPORTANTE (USO PROFESIONAL):** Si el uso de esta herramienta será de carácter **profesional, pericial o comercial**, el usuario deberá realizar una **donación de apoyo** al proyecto. Una vez confirmada la donación, se le enviará el **código de registro** correspondiente, el cual activa el soporte técnico y el uso formal de la aplicación.
 
 **Derechos de Autor (Copyright):** Todos los derechos sobre el código fuente, la propiedad intelectual y la arquitectura de la aplicación están reservados. No se permite la redistribución, modificación o venta de este código sin un acuerdo de licencia formal. El uso está sujeto al Acuerdo de Licencia de Usuario Final (EULA) incluido en la aplicación.
 
-**Contacto:** Para soporte avanzado o licencias de usuario registrado, por favor contacte a `support@ucapem.group`.
+**Contacto:** Para soporte avanzado, licencias de usuario registrado o información sobre donaciones, por favor contacte a `support@ucapem.group`.
+
