@@ -54,4 +54,12 @@ Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o
 | **Python** | Python 3.10 o superior (versión estable). | Requerido para ejecutar el código fuente. |
 | **Acceso a Internet** | Requerido | Esencial para las consultas al **Módulo de Interpretación con AI (Gemini)**. |
 
+---
 
+## 📜 Licencia y Uso
+
+Este software es de **Uso Gratuito (FREE FOR USE)** para fines de desarrollo, educativos y profesionales.
+
+**Derechos de Autor (Copyright):** Todos los derechos sobre el código fuente, la propiedad intelectual y la arquitectura de la aplicación están reservados. No se permite la redistribución, modificación o venta de este código sin un acuerdo de licencia formal. El uso está sujeto al Acuerdo de Licencia de Usuario Final (EULA) incluido en la aplicación.
+
+**Contacto:** Para soporte avanzado o licencias de usuario registrado, por favor contacte a `support@ucapem.group`.
