@@ -50,6 +50,19 @@ Integración de la **Inteligencia Artificial** para soporte en la toma de decisi
 
 ---
 
+## 🎯 Configuracion Inicial
+
+**WhatsApp ForensiCore** puede ser ejecutado desde cualquier directorio o ruta, pero para un mejor desempeño se recomienda:
+
+### 1. Ruta
+Se recomienda descomprimir o copiar el aplicativo en la **unidad principal C:\ForensiCore**
+
+### 2. Primera Ejecución
+Al ejecutar y crear por primera vez un caso, al momento de salvar los datos, se recomienda **guardarlo en la misma ruta C:\ForensiCore**, porteriormente cerrar el programa y volver a ejecutarlo para que entre en funcionamiento los demas módulos.
+Posterior al primer caso, en los siguientes, despues de dar clic en el botón **Guardar Caso** se debe seleccionar el directorio donde se encuentre el directorio com.whatsapp con las respectivas bases de datos desencriptadas.
+
+---
+
 ## 💻 Requisitos Técnicos Mínimos
 
 Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o como binario compilado (si se utiliza la versión pre-empaquetada), se requieren los siguientes componentes:
