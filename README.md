@@ -79,7 +79,7 @@ Para activar las funcionalidades del software en entornos educativos y garantiza
 | :--- | :--- | :--- |
 | **Académico / Investigación** | `Z0FBQUFBQnBFZ0t3N014NzhDV3dQdUl6cUpEdFNiWk5Ya0dKZ3VkSmUxamlGQXVWUGg5Zm5rZ2w4RERRV0dCVEgzdFNvQ29mN0Vic2xyTjdmcVVyWE9nbUQxMnVXNlktZzEwYjMwMk5rZGxNZ0FQZUV2dDFsM3E5OWptVGYtTGplT2ZEVTZRSTN0RFJGODRHVlN5bllTYTRzY0NnMm1KeHU4SjJFZG1xX3JnbTJrNlViVnZLWllsaTdId0FIOS1HRl80YmZDNHA2bHdyQlFaUEdEazVhbmFEdmJfT2FOLUp1Y3JpcUtzNC1LWWdKaDEwVUlpTEhoWDltYkJRUDZnbVJyb1VVbzYxM3gxUXhlc3c0UU15STFRaHgzTGp0UlJmNzN6MlpZOXozX2RBY0ZoWUNGSFBmN3c9` | **Indefinido** (Sujeto a renovación) |
 
-### 💼 Uso Profesional, Pericial o Comercial (Licencia Requerida)
+### 💼 Uso Profesional, Pericial o Comercial (Registro Requerido)
 
 Si la herramienta se utiliza con **fines profesionales, periciales, comerciales** o cualquier actividad generadora de ingresos, el usuario deberá realizar una **donación de apoyo al proyecto**. Una vez confirmada la donación, se le enviará el código de registro correspondiente. Este código de registro:
 * Activa la versión completa de uso formal.
