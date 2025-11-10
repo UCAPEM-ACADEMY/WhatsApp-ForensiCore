@@ -1,19 +1,23 @@
 # 🔍 WhatsApp ForensiCore | Solución de Análisis Forense Digital
 
-[![License](https://img.shields.io/badge/License-Uso_Gratuito-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Uso_Gratuito_No_Comercial-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-v.1.0.2-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey.svg)]()
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
 <div align="center">
-  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="800"/>
+  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="800"/>
 </div>
+
+---
 
 ## 🛡️ Descripción y Valor Estratégico
 
 **WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de Archivos Incrementales de WhatsApp (Android).
 
-El proyecto se enfoca en la **integridad probatoria** (ISO 27037) y la **trazabilidad del proceso** (ISO 27043), proporcionando a peritos judiciales y analistas una cadena de custodia clara, desde el descifrado hasta la generación del reporte final. Su arquitectura modular permite un análisis profundo, incluyendo la **recuperación de eventos de alto valor probatorio (AVE)** como mensajes eliminados y ediciones de contenido.
+El proyecto se enfoca en la **integridad probatoria** (**ISO 27037**) y la **trazabilidad del proceso** (**ISO 27043**), proporcionando a peritos judiciales y analistas una cadena de custodia clara, desde el descifrado hasta la generación del reporte final. Su arquitectura modular permite un análisis profundo, incluyendo la **recuperación de eventos de alto valor probatorio (AVE)** como mensajes eliminados y ediciones de contenido.
+
+Este es un **proyecto de código cerrado (Proprietary)**, ofrecido de forma **gratuita** para la comunidad educativa y de investigación, pero que requiere un código de registro para su uso profesional y comercial.
 
 ---
 
@@ -36,13 +40,13 @@ El núcleo del análisis forense. Este módulo procesa la base de datos para con
 Este módulo es responsable de la documentación y presentación final de la evidencia, siguiendo un estándar de calidad judicial:
 * **Generación PDF:** Utiliza la librería **ReportLab** para generar reportes estructurados en formato PDF, listos para ser presentados en un tribunal.
 * **Exportación de Datos Crudos:** Permite exportar la línea de tiempo completa a formatos planos como **CSV**, facilitando la integración con otras herramientas forenses (ej., Nuix, EnCase).
-* **Auditoría de Acciones:** Incluye un **Log de Auditoría** que registra todas las acciones tomadas por el perito dentro de la herramienta, asegurando la trazabilidad total (ISO 27043).
+* **Auditoría de Acciones:** Incluye un **Log de Auditoría** que registra todas las acciones tomadas por el perito dentro de la herramienta, asegurando la trazabilidad total (**ISO 27043**).
 
 ### 4. Módulo de Interpretación con IA
 Integración de la **Inteligencia Artificial** para soporte en la toma de decisiones e interpretación de grandes volúmenes de datos:
-* **Análisis Rápido:** Permite al perito enviar fragmentos de conversaciones o líneas de tiempo consolidadas a la API de **Google Gemini** para obtener resúmenes ejecutivos, análisis de sentimientos o la identificación de patrones de actividad sospechosa.
+* **Análisis Rápido:** Permite al perito enviar archivos JSON o líneas de tiempo consolidadas a la API de **Google Gemini** para obtener resúmenes ejecutivos, análisis de continuidad o la identificación de indicios recuperados.
 * **Generación de Conclusiones:** Asiste en la redacción de conclusiones forenses basadas en el análisis de texto.
-* **Reporte AI Suplementario:** Genera un PDF aparte con las preguntas, respuestas e interpretaciones obtenidas de la IA, manteniendo la evidencia principal inalterada.
+* **Reporte AI Suplementario:** Genera un PDF aparte con las interpretaciones obtenidas de la IA, manteniendo la evidencia principal inalterada.
 
 ---
 
@@ -55,28 +59,42 @@ Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o
 | Componente | Requisito Mínimo | Notas |
 | :--- | :--- | :--- |
 | **Sistema Operativo** | Windows (64-bit), macOS (64-bit), Distribuciones Linux modernas. | Soporte nativo para Python y librerías C/C++. |
-| **Python** | Python 3.10 o superior (versión estable). | Requerido para ejecutar el código fuente. |
+| **Python Opcional** | Python 3.9 o superior (versión estable). | Requerido para ejecutar futuras actualizaciones. |
 | **Acceso a Internet** | Requerido | Esencial para las consultas al **Módulo de Interpretación con AI (Gemini)**. |
 
 ---
 
-## 📜 Licencia y Uso
+## 📜 Licencia y Política de Uso (Código Cerrado)
 
-Este software es de **Uso Gratuito (FREE FOR USE)** para fines educativos.
+Este software es de **Código Cerrado (Proprietary)** y su uso está regulado por la siguiente política:
 
-**IMPORTANTE (USO PROFESIONAL):** Si el uso de esta herramienta será de carácter **profesional, pericial o comercial**, el usuario deberá realizar una **donación de apoyo** al proyecto. Una vez confirmada la donación, se le enviará el **código de registro** correspondiente, el cual activa el soporte técnico y el uso formal de la aplicación.
+### 🎓 Uso Educativo y de Investigación (Gratuito)
+**WhatsApp ForensiCore** se ofrece de forma **gratuita** para su uso por parte de **estudiantes, docentes e investigadores** en el ámbito académico y no comercial. Se solicita un reconocimiento al proyecto en cualquier publicación o trabajo derivado.
 
-**Derechos de Autor (Copyright):** Todos los derechos sobre el código fuente, la propiedad intelectual y la arquitectura de la aplicación están reservados. No se permite la redistribución, modificación o venta de este código sin un acuerdo de licencia formal. El uso está sujeto al Acuerdo de Licencia de Usuario Final (EULA) incluido en la aplicación.
+### 🔑 Código de Licencia para la Comunidad Educativa y de Investigación
 
-**Contacto:** Para soporte avanzado, licencias de usuario registrado o información sobre donaciones, por favor contacte a `support@ucapem.group`.
+Para activar las funcionalidades del software en entornos educativos y garantizar su uso sin restricciones temporales, hemos habilitado un código de licencia genérico para la comunidad:
 
+| **Tipo de Licencia** | **Código de Registro** | **Vigencia** |
+| :--- | :--- | :--- |
+| **Académico / Investigación** | `Z0FBQUFBQnBFZ0t3N014NzhDV3dQdUl6cUpEdFNiWk5Ya0dKZ3VkSmUxamlGQXVWUGg5Zm5rZ2w4RERRV0dCVEgzdFNvQ29mN0Vic2xyTjdmcVVyWE9nbUQxMnVXNlktZzEwYjMwMk5rZGxNZ0FQZUV2dDFsM3E5OWptVGYtTGplT2ZEVTZRSTN0RFJGODRHVlN5bllTYTRzY0NnMm1KeHU4SjJFZG1xX3JnbTJrNlViVnZLWllsaTdId0FIOS1HRl80YmZDNHA2bHdyQlFaUEdEazVhbmFEdmJfT2FOLUp1Y3JpcUtzNC1LWWdKaDEwVUlpTEhoWDltYkJRUDZnbVJyb1VVbzYxM3gxUXhlc3c0UU15STFRaHgzTGp0UlJmNzN6MlpZOXozX2RBY0ZoWUNGSFBmN3c9` | **Indefinido** (Sujeto a renovación) |
+
+### 💼 Uso Profesional, Pericial o Comercial (Licencia Requerida)
+
+Si la herramienta se utiliza con **fines profesionales, periciales, comerciales** o cualquier actividad generadora de ingresos, el usuario deberá realizar una **donación de apoyo al proyecto**. Una vez confirmada la donación, se le enviará el código de registro correspondiente. Este código de registro:
+* Activa la versión completa de uso formal.
+* Incluye acceso a soporte técnico avanzado.
+* Garantiza el cumplimiento del Acuerdo de Licencia de Usuario Final (EULA).
+
+**Derechos de Autor (Copyright):** Todos los derechos sobre el código fuente, la propiedad intelectual y la arquitectura de la aplicación están reservados. No se permite la ingeniería inversa, la redistribución, modificación o venta de este código.
+
+**Contacto:** Para soporte avanzado, licencias de usuario registrado o información de cumplimiento, por favor contacte a `support@ucapem.group`.
 
 ---
+
 ## 💖 Apoyo y Contribución al Proyecto
 
-El desarrollo y mantenimiento de **WhatsApp ForensiCore** representa una inversión significativa en **horas de trabajo forense especializado**, en la **adquisición de licencias de desarrollo** y en el consumo de recursos de APIs avanzadas (como Gemini AI).
-
-Su soporte es fundamental para garantizar la **excelencia, estabilidad y continuidad** del proyecto, permitiéndonos ofrecer una herramienta de calidad pericial multiplataforma.
+El desarrollo y mantenimiento de **WhatsApp ForensiCore** representa una inversión significativa. Su apoyo es fundamental para garantizar la **excelencia, estabilidad y continuidad** del proyecto.
 
 ### 💰 Niveles de Contribución Sugeridos
 
@@ -103,4 +121,3 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
 > 4. **Comprobante de Donación**
 
 **URL de Apoyo Directo (Donaciones):** `https://www.paypal.com/ncp/payment/NFEJUW3KN82WG`
-
