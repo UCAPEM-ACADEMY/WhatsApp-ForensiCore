@@ -134,3 +134,7 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
 > 4. **Comprobante de Donación**
 
 **URL de Apoyo Directo (Donaciones):** `https://www.paypal.com/ncp/payment/NFEJUW3KN82WG`
+
+---
+☕ **Apoya o invita un café al programador de la herramienta:** `buymeacoffee.com/perito.lat`
+
