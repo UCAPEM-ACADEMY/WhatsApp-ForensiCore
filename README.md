@@ -136,5 +136,13 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
 **URL de Apoyo Directo (Donaciones):** `https://www.paypal.com/ncp/payment/NFEJUW3KN82WG`
 
 ---
-☕ **Apoya o invita un café al programador de la herramienta:** `buymeacoffee.com/perito.lat`
 
+## ☕ ¿Te sirvió este proyecto?
+
+¡Genial! Puedes **apoyar al desarrollador** con un café virtual (da clic en el botón):
+
+<a href="https://buymeacoffee.com/perito.lattuusuario" target="_blank">
+  <img src="https://storage.ko-fi.com/cdn/kofi_stroke_cup.svg" width="180" alt="Support me on Ko-fi">
+</a>
+
+> *Cualquier apoyo ayuda a seguir mejorando el proyecto.*
