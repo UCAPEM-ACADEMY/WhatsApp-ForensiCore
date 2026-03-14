@@ -50,6 +50,37 @@ Integración de la **Inteligencia Artificial** para soporte en la toma de decisi
 
 ---
 
+# 🚀 Novedades y Actualizaciones - WhatsApp ForensiCore (v.2.0.0)
+
+Hemos elevado **WhatsApp ForensiCore** al siguiente nivel, transformándolo de un simple extractor de bases de datos a una **Suite Forense Integral** con capacidades de análisis heurístico, indexación avanzada y generación de dictámenes asistidos por IA. Todo alineado estrictamente a las normativas **ISO/IEC 27037, 27042 y 27043**.
+
+## 🌟 Características Destacadas de la Nueva Versión
+
+### 1. 🔓 Módulo de Adquisición Avanzada: Extracción Física/Lógica (APK Downgrade)
+Se ha perfeccionado el motor de extracción automatizada para dispositivos Android, permitiendo acceder al contenedor cifrado de WhatsApp (`/data/data/com.whatsapp`) sin requerir privilegios de superusuario (Root).
+* **Bypass de Sandbox (Android 12+):** Implementación de la técnica de *APK Downgrade*, que degrada temporalmente la aplicación a una versión heredada con políticas de seguridad permisivas (Target SDK antiguo) para forzar la habilitación del `adb backup`.
+* **Extracción de Llaves Criptográficas:** Captura exitosa del archivo `key` y de la base de datos viva (`msgstore.db`), junto con sus archivos de registro transaccional (`-wal` y `-shm`), vitales para la recuperación de datos volátiles.
+* **Orquestación ADB Segura:** Automatización del *Android Debug Bridge* que garantiza la retención de los datos del usuario durante la sustitución de paquetes, preservando la integridad de la evidencia original.
+
+### 2. 🧠 Nuevo Módulo de Inteligencia Artificial Forense (Gemini 2.5 Flash)
+Se ha integrado un motor de asistencia pericial que no solo lee los datos, sino que aplica lógica investigativa criminalística para interpretar la evidencia volátil.
+* **Detección de Artefactos Anti-Forenses:** Identificación y correlación automática de registros "Tombstone" (Mensajes eliminados) y reconstrucción de mensajes "Ver una vez" (Efímeros) desde la memoria transaccional (WAL).
+* **Ingeniería de Prompts Forenses:** La IA redacta hallazgos evaluando la intencionalidad de ocultamiento y la dinámica de comunicación entre los involucrados.
+* **Exportación Dinámica:** Generación de **Informes en PDF y HTML** con renderizado avanzado, notas de descargo legal (disclaimers), protección de firmas y diseño responsivo.
+
+### 3. 🔎 Integración Nativa con el Motor IPED (Digital Evidence Processor and Indexer)
+Ahora ForensiCore funciona como un orquestador directo para **IPED (Digital Evidence Processor and Indexer)**, permitiendo indexar la evidencia, aplicar OCR y buscar expresiones regulares sin salir de la herramienta.
+* **Filtro de Evidencia Inteligente (Smart Exclusion):** El sistema aísla automáticamente los directorios de evidencia pura (Bases de datos, Extracciones ADB, Fijaciones) y excluye los reportes internos para evitar duplicidad de hallazgos y optimizar el consumo de CPU/RAM.
+* **Lectura Dinámica de Perfiles:** Detección en tiempo real de los perfiles de indexación de IPED (`default`, `forensic`, `blind`, `fast`, etc.).
+* **Consola Transmisión en Vivo:** Monitoreo del flujo de procesamiento de Java directamente en la interfaz gráfica oscura de ForensiCore.
+
+### 4. 🛡️ Trazabilidad y Cadena de Custodia Estricta
+Se ha reestructurado por completo el sistema de *Logging* para garantizar la pureza de la evidencia:
+* **Aislamiento de Reportes:** Creación de un único directorio centralizado llamado `Reportes` para almacenar exclusivamente las salidas finales (PDF, CSV, JSON, HTML).
+* **Logs Raíz:** El archivo `audit_log.txt` (que registra cada clic, módulo ejecutado y error del perito) se guarda directamente en la raíz del caso, asegurando que la auditoría de la herramienta no contamine los subdirectorios de extracción.
+
+---
+
 ## 🎯 Configuracion Inicial
 
 **WhatsApp ForensiCore** puede ser ejecutado desde cualquier directorio o ruta, pero para un mejor desempeño se recomienda:
