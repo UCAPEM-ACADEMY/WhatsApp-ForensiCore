@@ -1,7 +1,7 @@
 # 🔍 WhatsApp ForensiCore | Solución de Análisis Forense Digital
 
 [![License](https://img.shields.io/badge/License-Uso_Gratuito_No_Comercial-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-v.1.0.2-orange.svg)]()
+[![Version](https://img.shields.io/badge/Version-v.2.0.0-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey.svg)]()
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
