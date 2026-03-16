@@ -172,7 +172,7 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
 
 ¡Genial! Puedes **apoyar al desarrollador** con un café virtual (da clic en el botón):
 
-<a href="https://buymeacoffee.com/perito.lattuusuario" target="_blank">
+<a href="https://buymeacoffee.com/perito.lat" target="_blank">
   <img src="https://storage.ko-fi.com/cdn/kofi_stroke_cup.svg" width="100" alt="Support me on Ko-fi">
 </a>
 
