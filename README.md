@@ -140,22 +140,68 @@ Si la herramienta se utiliza con **fines profesionales, periciales, comerciales*
 
 El desarrollo y mantenimiento de **WhatsApp ForensiCore** representa una inversión significativa. Su apoyo es fundamental para garantizar la **excelencia, estabilidad y continuidad** del proyecto.
 
-### 💰 Niveles de Contribución Sugeridos
+### 💰 Niveles de Contribución y Soporte
 
-Para asegurar que podemos cubrir los costos operativos y seguir invirtiendo en nuevas funcionalidades y estándares ISO, solicitamos amablemente que las contribuciones sean:
+Para garantizar la sostenibilidad del proyecto, la inversión en nuevas funcionalidades y el cumplimiento de estándares ISO 27037/27042, hemos establecido diferentes niveles de soporte según la versión de la herramienta:
 
-> **El soporte sugerido es de $30 USD en adelante.**
-> Agradecemos inmensamente tu apoyo, el cual se traduce directamente en la mejora continua de la herramienta forense.
+> **[!IMPORTANTE]**
+> **Antes de realizar su contribución:** Le solicitamos amablemente **revisar las Notas de Versión**. Esto le permitirá verificar las capacidades técnicas y compatibilidad de cada entrega para asegurarse de que el aporte corresponda a la versión de su interés.
 
 ### ¡Apoya Nuestro Trabajo!
 
 Haga clic en el botón de abajo para realizar su donación y obtener su código de registro profesional:
 
-[![Donar con PayPal](https://img.shields.io/badge/PayPal-Donar-blue.svg?logo=paypal)](https://www.paypal.com/ncp/payment/NFEJUW3KN82WG)
-
-<a href="https://www.paypal.com/ncp/payment/NFEJUW3KN82WG" target="_blank">
-  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar con PayPal" />
-</a>
+<table>
+  <tr>
+    <td align="center">
+      <b>ForensiCore V1.0.2</b><br>
+      <small>Donativo $30</small>
+    </td>
+    <td align="center">
+      <b>ForensiCore V2.0.0</b><br>
+      <small>Donativo $50</small>
+    </td>
+    <td align="center">
+      <b>ForensiCore V3.0.0</b><br>
+      <small>Donativo $80</small>
+    </td>
+    <td align="center">
+      <b>ForensiCore V3.0.0</b><br>
+      <small>Donativo $100</small>
+    </td>
+    <td align="center">
+      <b>ForensiCore V3.0.0</b><br>
+      <small>Donativo $120</small>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/NFEJUW3KN82WG" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/UVGZAACSN25H4" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/WXG5QS7R3JNTL" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/S6MUPKWXCDZQE" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/D48BEBLN5Z8PG" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+    </td>
+  </tr>
+</table>
 
 > **PASOS POST-DONACIÓN:**
 > **Es fundamental** que, una vez realizada la donación, envíe un correo electrónico a **`support@ucapem.group`** con los siguientes datos para poder generar y enviar su código de registro:
@@ -163,9 +209,6 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
 > 2. **Número de Teléfono** (Incluyendo Código de País)
 > 3. **Correo Electrónico**
 > 4. **Comprobante de Donación**
-
-**URL de Apoyo Directo (Donaciones):** `https://www.paypal.com/ncp/payment/NFEJUW3KN82WG`
-
 ---
 
 ## ☕ ¿Te sirvió este proyecto?
