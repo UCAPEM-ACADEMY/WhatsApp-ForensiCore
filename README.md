@@ -1,7 +1,7 @@
 # 🔍 WhatsApp ForensiCore | Solución de Análisis Forense Digital
 
 [![License](https://img.shields.io/badge/License-Uso_Gratuito_No_Comercial-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-v.2.0.0-orange.svg)]()
+[![Version](https://img.shields.io/badge/Version-v.3.0.0-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey.svg)]()
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
@@ -86,10 +86,10 @@ Se ha reestructurado por completo el sistema de *Logging* para garantizar la pur
 **WhatsApp ForensiCore** puede ser ejecutado desde cualquier directorio o ruta, pero para un mejor desempeño se recomienda:
 
 ### 1. Ruta
-Se recomienda descomprimir o copiar el aplicativo en la **unidad principal C:\ForensiCore**
+Instalar el aplicativo en la **ruta ppor defecto C:\Archivos de programa\ForensiCore**
 
 ### 2. Primera Ejecución
-Al ejecutar y crear por primera vez un caso, al momento de salvar los datos, se recomienda **guardarlo en la misma ruta C:\ForensiCore**, porteriormente cerrar el programa y volver a ejecutarlo para que entre en funcionamiento los demas módulos.
+**Se debe ejecutar con privilegios de administrador** y crear por primera vez un caso, al momento de salvar los datos, se recomienda **guardarlo en la misma ruta por defecto C:\Adquisicion-ForensiCore**, porteriormente cerrar el programa y volver a ejecutarlo para que entre en funcionamiento los demas módulos.
 Posterior al primer caso, en los siguientes, despues de dar clic en el botón **Guardar Caso** se debe seleccionar el directorio donde se encuentre el directorio com.whatsapp con las respectivas bases de datos desencriptadas.
 
 ---
@@ -115,7 +115,7 @@ Este software es de **Código Cerrado (Proprietary)** y su uso está regulado po
 ### 🎓 Uso Educativo y de Investigación (Gratuito)
 **WhatsApp ForensiCore** se ofrece de forma **gratuita** para su uso por parte de **estudiantes, docentes e investigadores** en el ámbito académico y no comercial. Se solicita un reconocimiento al proyecto en cualquier publicación o trabajo derivado.
 
-### 🔑 Código de Licencia para la Comunidad Educativa y de Investigación
+### 🔑 Código de Licencia para la Comunidad Educativa y de Investigación (v1.0.2 - v2.0.0)
 
 Para activar las funcionalidades del software en entornos educativos y garantizar su uso sin restricciones temporales, hemos habilitado un código de licencia genérico para la comunidad:
 
