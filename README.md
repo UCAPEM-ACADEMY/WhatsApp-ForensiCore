@@ -81,6 +81,33 @@ Se ha reestructurado por completo el sistema de *Logging* para garantizar la pur
 
 ---
 
+# 🚀 Novedades y Actualizaciones - WhatsApp ForensiCore (v.3.0.0)
+
+Esta actualización mayor transforma a **WhatsApp ForensiCore** en una suite integral de grado pericial, incorporando inteligencia artificial local (Gemini AI), métodos de adquisición agresivos y entornos de análisis aislados, alineados estrictamente a las normativas **ISO/IEC 27037, 27042 y 27043**.
+
+## 🌟 Características Destacadas de la Nueva Versión
+
+#### 📱 1. Adquisición Avanzada y Entorno Seguro
+* **APK Downgrade Automatizado:** Bypass del Sandbox en Android 11+ (sin Root) orquestando la degradación y restauración segura de la aplicación.
+* **Extracción E2EE:** Captura nativa de copias de seguridad con cifrado de extremo a extremo.
+* **Montaje VHD:** Aislamiento de la evidencia en discos virtuales cifrados (`Datos.vhd`) para prevenir la contaminación de hashes por el sistema operativo anfitrión.
+* **Radar Anti-Mod y Telemetría:** Detección mediante ADB de entornos de "Perfiles de Trabajo" y aplicaciones clonadas (WhatsApp Plus, GBWhatsApp).
+
+#### 🧠 2. Inteligencia Artificial y Procesamiento Multimedia (Offline)
+* **Transcriptor Whisper AI:** Procesamiento NLP local (CPU int8) para convertir notas de voz (OGG/M4A) a texto de forma autónoma, sin comprometer la confidencialidad.
+* **Visión Computacional:** Módulo OpenCV para la extracción automática de cuadros clave (frames) en videos recuperados.
+
+#### ☁️ 3. Resurrección de Evidencia y Conexión CDN
+* **Descifrado de Efímeros ("Ver una vez"):** Reconstrucción criptográfica y conexión a los servidores de Meta (`mmg.whatsapp.net`) mediante derivación de llaves HKDF.
+* **Key Hunting (Fuerza Bruta MAC):** Algoritmos avanzados sobre archivos `.wal` y `.shm` para rescatar llaves multimedia huérfanas de mensajes eliminados.
+* **Lectura de Magic Bytes:** Identificación de cabeceras hexadecimales crudas para restaurar la extensión real de archivos corruptos.
+
+#### 📄 4. Exportación y Trazabilidad
+* **Reporte HTML Interactivo:** Nuevo motor de generación de dictámenes web offline con galerías de evidencia efímera y reproductores multimedia.
+* **Mejoras en PDF Pericial:** Tabla de *triage volumétrico* (conteo de Tombstones/Free-Pages) y apéndice dinámico para mensajes que superan los 1800 caracteres.
+
+---
+
 ## 🎯 Configuracion Inicial
 
 **WhatsApp ForensiCore** puede ser ejecutado desde cualquier directorio o ruta, pero para un mejor desempeño se recomienda:
@@ -115,13 +142,19 @@ Este software es de **Código Cerrado (Proprietary)** y su uso está regulado po
 ### 🎓 Uso Educativo y de Investigación (Gratuito)
 **WhatsApp ForensiCore** se ofrece de forma **gratuita** para su uso por parte de **estudiantes, docentes e investigadores** en el ámbito académico y no comercial. Se solicita un reconocimiento al proyecto en cualquier publicación o trabajo derivado.
 
-### 🔑 Código de Licencia para la Comunidad Educativa y de Investigación (v1.0.2 - v2.0.0)
+### 🔑 Código de Registro para la Comunidad Educativa y de Investigación (v1.0.2 - v2.0.0) - Código de Instalación V3.0.0
 
-Para activar las funcionalidades del software en entornos educativos y garantizar su uso sin restricciones temporales, hemos habilitado un código de licencia genérico para la comunidad:
+Para activar las funcionalidades del software en entornos educativos y garantizar su uso sin restricciones temporales, hemos habilitado un código de registro genérico para la comunidad:
 
-| **Tipo de Licencia** | **Código de Registro** | **Vigencia** |
+### 🎓 Licencia Académica / Investigación
+
+| **Tipo de Registro** | **Código de Registro** | **Vigencia** |
 | :--- | :--- | :--- |
-| **Académico / Investigación** | `Z0FBQUFBQnBFZ0t3N014NzhDV3dQdUl6cUpEdFNiWk5Ya0dKZ3VkSmUxamlGQXVWUGg5Zm5rZ2w4RERRV0dCVEgzdFNvQ29mN0Vic2xyTjdmcVVyWE9nbUQxMnVXNlktZzEwYjMwMk5rZGxNZ0FQZUV2dDFsM3E5OWptVGYtTGplT2ZEVTZRSTN0RFJGODRHVlN5bllTYTRzY0NnMm1KeHU4SjJFZG1xX3JnbTJrNlViVnZLWllsaTdId0FIOS1HRl80YmZDNHA2bHdyQlFaUEdEazVhbmFEdmJfT2FOLUp1Y3JpcUtzNC1LWWdKaDEwVUlpTEhoWDltYkJRUDZnbVJyb1VVbzYxM3gxUXhlc3c0UU15STFRaHgzTGp0UlJmNzN6MlpZOXozX2RBY0ZoWUNGSFBmN3c9` | **Indefinido** (Sujeto a renovación) |
+| **Académico / Investigación<br>V1.0.2 - v2.0.0** | <details><summary>👉 Clic para revelar código</summary><code>Z0FBQUFBQnBFZ0t3N014NzhDV3dQdUl6cUpEdFNiWk5Ya0dKZ3VkSmUxamlGQXVWUGg5Zm5rZ2w4RERRV0dCVEgzdFNvQ29mN0Vic2xyTjdmcVVyWE9nbUQxMnVXNlktZzEwYjMwMk5rZGxNZ0FQZUV2dDFsM3E5OWptVGYtTGplT2ZEVTZRSTN0RFJGODRHVlN5bllTYTRzY0NnMm1KeHU4SjJFZG1xX3JnbTJrNlViVnZLWllsaTdId0FIOS1HRl80YmZDNHA2bHdyQlFaUEdEazVhbmFEdmJfT2FOLUp1Y3JpcUtzNC1LWWdKaDEwVUlpTEhoWDltYkJRUDZnbVJyb1VVbzYxM3gxUXhlc3c0UU15STFRaHgzTGp0UlJmNzN6MlpZOXozX2RBY0ZoWUNGSFBmN3c9</code></details> | **Indefinido** (Sujeto a renovación) |
+
+| **Versión** | **Código de Instalación** | **Vigencia** |
+| :--- | :--- | :--- |
+| **ForensiCore v3.0.0** | `34ZOBsTEzP21046` | **Indefinido** |
 
 ### 💼 Uso Profesional, Pericial o Comercial (Registro Requerido)
 
