@@ -14,6 +14,14 @@
 
 ---
 
+## 🔄 Historial de Actualizaciones
+
+Mantenemos un registro estricto de todas las mejoras, correcciones y nuevas herramientas integradas en cada versión de la suite.
+
+👉 **[Ver el Registro de Cambios completo (CHANGELOG)](CHANGELOG.md)**
+
+---
+
 ## 🛡️ Descripción y Valor Estratégico
 
 **WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de Archivos Incrementales de WhatsApp (Android).
