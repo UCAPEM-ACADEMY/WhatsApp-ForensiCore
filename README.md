@@ -6,9 +6,11 @@
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
 
 <div align="center">
-  <img src="https://ucapem.group/wp-content/uploads/2025/11/ForensiCore.png" alt="Logo de ForensiCore - Análisis Forense Digital" width="800"/>
+  <a href="https://www.youtube.com/watch?v=n2w6BTI5MhQ&t=2742s&pp=ygUGdWNhcGVt" target="_blank">
+    <img src="https://ucapem.group/wp-content/uploads/2026/03/ForensiCorev3.0.0.png" alt="Ver Demo de ForensiCore" width="800"/>
+  </a>
+  <p><strong>🎥 Video - Lanzamiento WhatsApp ForensiCore v3.0.0</strong></p>
 </div>
-
 ---
 
 ## 🛡️ Descripción y Valor Estratégico
