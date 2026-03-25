@@ -11,11 +11,9 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - **IA Forense Offline:** Transcripción de audios con `faster-whisper` y extracción de fotogramas clave con `cv2`.
 
 ### Cambiado (Changed)
-- Transición a criptografía Fernet con PBKDF2HMAC para la validación de licencias comerciales.
 - Orquestación de reportes mejorada: PDF dinámico para mensajes extensos y nuevo Visor HTML interactivo.
 
 ### Solucionado (Fixed)
-- Vulnerabilidades de memoria (`0xc0000005`) al compilar librerías de IA pesadas con Nuitka.
 - Detección mejorada de perfiles de trabajo y aplicaciones clonadas mediante comandos ADB.
 
 ---
