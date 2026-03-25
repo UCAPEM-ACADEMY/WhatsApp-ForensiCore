@@ -30,6 +30,7 @@ _ Filtración de falsos positivos y "basura" de sistema (Triggers SQL, hashes la
 
 ### Solucionado (Fixed)
 - Detección mejorada de perfiles de trabajo y aplicaciones clonadas mediante comandos ADB.
+- Otras correcciónes menores.
 
 ---
 
