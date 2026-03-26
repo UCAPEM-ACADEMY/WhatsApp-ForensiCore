@@ -206,15 +206,15 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
       <small>Donativo $50</small>
     </td>
     <td align="center">
-      <b>ForensiCore V3.0.0</b><br>
+      <b>ForensiCore V3.1.1</b><br>
       <small>Donativo $80</small>
     </td>
     <td align="center">
-      <b>ForensiCore V3.0.0</b><br>
+      <b>ForensiCore V3.1.1</b><br>
       <small>Donativo $100</small>
     </td>
     <td align="center">
-      <b>ForensiCore V3.0.0</b><br>
+      <b>ForensiCore V3.1.1</b><br>
       <small>Donativo $120</small>
     </td>
   </tr>
