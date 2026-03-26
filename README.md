@@ -77,7 +77,7 @@ Integración de IA para soporte en la toma de decisiones, procesamiento multimed
 **WhatsApp ForensiCore** puede ser ejecutado desde cualquier directorio o ruta, pero para un mejor desempeño se recomienda:
 
 ### 1. Ruta
-Instalar el aplicativo en la **ruta ppor defecto C:\Archivos de programa\ForensiCore**
+Instalar el aplicativo en la **ruta por defecto C:\Archivos de programa\ForensiCore**
 
 ### 2. Primera Ejecución
 **Se debe ejecutar con privilegios de administrador** y crear por primera vez un caso, al momento de salvar los datos, se recomienda **guardarlo en la misma ruta por defecto C:\Adquisicion-ForensiCore**, porteriormente cerrar el programa y volver a ejecutarlo para que entre en funcionamiento los demas módulos.
@@ -89,12 +89,12 @@ Posterior al primer caso, en los siguientes, despues de dar clic en el botón **
 
 Para la ejecución estable de **WhatsApp ForensiCore** desde el código fuente o como binario compilado (si se utiliza la versión pre-empaquetada), se requieren los siguientes componentes:
 
-### Requisitos de Software (Windows, macOS, Linux)
+### Requisitos de Software (Windows)
 
 | Componente | Requisito Mínimo | Notas |
 | :--- | :--- | :--- |
-| **Sistema Operativo** | Windows (64-bit), macOS (64-bit), Distribuciones Linux modernas. | Soporte nativo para Python y librerías C/C++. |
-| **Python Opcional** | Python 3.9 o superior (versión estable). | Requerido para ejecutar futuras actualizaciones. |
+| **Sistema Operativo** | Windows (64-bit) | Soporte nativo para Python y librerías C/C++. |
+| **Python Opcional** | Python 3.12 (versión estable). | Requerido para ejecutar futuras actualizaciones. |
 | **Acceso a Internet** | Requerido | Esencial para las consultas al **Módulo de Interpretación con AI (Gemini)**. |
 
 ---
