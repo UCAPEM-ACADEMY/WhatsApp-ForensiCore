@@ -213,7 +213,7 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
         <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
       </a>
       <td align="center">
-      <a href="https://www.paypal.com/ncp/payment/D48BEBLN5Z8PG" target="_blank">
+      <a href="https://www.paypal.com/ncp/payment/V8KXCQCZP2NHY" target="_blank">
         <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
       </a>
     </td>
