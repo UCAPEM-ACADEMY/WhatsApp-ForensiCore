@@ -152,38 +152,38 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
   <tr>
     <td align="center">
       <b>ForensiCore V1.0.2</b><br>
-      <small>Android</small>
-      <small>Donativo $30</small>
+      <small>Android</small><br>
+      <small>Donativo $30</small><br>
       <small>Sin Soporte</small>
     </td>
     <td align="center">
       <b>ForensiCore V2.0.0</b><br>
-      <small>Android</small>
-      <small>Donativo $50</small>
+      <small>Android</small><br>
+      <small>Donativo $50</small><br>
       <small>Sin Soporte</small>
     </td>
     <td align="center">
       <b>ForensiCore V3.1.1</b><br>
-      <small>Android</small>
-      <small>Donativo $100</small>
+      <small>Android</small><br>
+      <small>Donativo $100</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V3.1.1</b><br>
-      <small>Android</small>
-      <small>Donativo $130</small>
+      <small>Android</small><br>
+      <small>Donativo $130</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V4.0.0</b><br>
-      <small>Android - iOS</small>
-      <small>Donativo $150</small>
+      <small>Android - iOS</small><br>
+      <small>Donativo $150</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V4.0.0</b><br>
-      <small>Android - iOS</small>
-      <small>Donativo $180</small>
+      <small>Android - iOS</small><br>
+      <small>Donativo $180</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
   </tr>
@@ -209,6 +209,10 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
       </a>
     </td>
     <td align="center">
+      <a href="https://www.paypal.com/ncp/payment/D48BEBLN5Z8PG" target="_blank">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
+      </a>
+      <td align="center">
       <a href="https://www.paypal.com/ncp/payment/D48BEBLN5Z8PG" target="_blank">
         <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donar">
       </a>
