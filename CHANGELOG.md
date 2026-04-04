@@ -3,6 +3,17 @@
 Todas las actualizaciones notables de WhatsApp ForensiCore se documentarán en este archivo. 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [3.1.2] - 2026-04-04
+### Solucionado (Fixed)
+- **Filtro de Evidencia Estricto:** Se corrigió una vulnerabilidad lógica que inyectaba incondicionalmente mensajes vivos en los reportes finales. Ahora, el sistema evalúa estrictamente la bandera, garantizando que el PDF y el JSON solo contengan evidencia eliminada, editada, efímera o geolocalizaciones.
+- **Purga Binaria en RAM (Deduplicación por Índices):** Se implementó un motor avanzado para el Carving de Páginas Libres y WAL. El script ahora extrae todos los key_id vivos de la base de datos y los utiliza como "lista negra" para aniquilar los falsos positivos a nivel hexadecimal antes de la lectura en crudo.
+- **Corrección de Multimedia Activa:** Las fotografías y videos vivos ya no se catalogan erróneamente como evidencia recuperada, limpiando drásticamente el ruido en el reporte final.
+- **Selector Explícito de Versión:** Se eliminó la selección automática de paquetes que causaba colapsos en dispositivos con Dual Messenger. Se implementó un menú desplegable (Combobox) para que el perito elija explícitamente entre WhatsApp Normal (com.whatsapp) y WhatsApp Business (com.whatsapp.w4b).
+- **Limpieza Preventiva ADB:** Se añadieron comandos de limpieza en el directorio /data/local/tmp/ del dispositivo móvil antes de cada extracción para evitar la contaminación cruzada de bases de datos de extracciones previas fallidas.
+- **Detector de Errores Silenciosos:** Se integró un sistema de alertas (messagebox) que avisa al perito si los módulos secundarios no se encuentran en la ruta esperada, evitando cierres inesperados de la aplicación.
+
+---
+
 ## [3.1.1] - 2026-03-25
 ### Añadido (Added)
 - **Módulo de Deep Carving:** Motor avanzado de búsqueda en espacio no asignado (Free-Pages) y memoria transaccional (WAL) para rescate binario de textos e imágenes RAW.
@@ -17,6 +28,8 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 ### Solucionado (Fixed)
 - Colapso crítico (AttributeError: 'NoneType') que interrumpía la generación del Visor HTML Interactivo al procesar bases de datos con campos estructurales nulos o severamente corruptos.
 _ Filtración de falsos positivos y "basura" de sistema (Triggers SQL, hashes largos y variables de interfaz) hacia la tabla de textos huérfanos en la consolidación de evidencia.
+
+---
 
 ## [3.0.0] - 2026-03-21
 ### Añadido (Added)
