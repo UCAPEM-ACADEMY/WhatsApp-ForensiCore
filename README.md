@@ -163,25 +163,25 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
       <small>Sin Soporte</small>
     </td>
     <td align="center">
-      <b>ForensiCore V3.1.1</b><br>
+      <b>ForensiCore V3.x.x</b><br>
       <small>Android</small><br>
       <small>Donativo $100</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
-      <b>ForensiCore V3.1.1</b><br>
+      <b>ForensiCore V3.x.x</b><br>
       <small>Android</small><br>
       <small>Donativo $130</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
-      <b>ForensiCore V4.0.0</b><br>
+      <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
       <small>Donativo $150</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
-      <b>ForensiCore V4.0.0</b><br>
+      <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
       <small>Donativo $180</small><br>
       <small>Actualizaciones Periódicas</small>
