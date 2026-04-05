@@ -18,7 +18,7 @@
 
 Mantenemos un registro estricto de todas las mejoras, correcciones y nuevas herramientas integradas en cada versión de la suite.
 
-👉 **[Ver el Registro de Cambios v3.x.x (CHANGELOG)](CHANGELOG.md)**
+👉 **[Ver el Registro de Cambios v3.x.x (CHANGELOG)](CHANGELOG.md)**<br>
 👉 **[Ver el Registro de Cambios v4.x.x (CHANGELOG)](CHANGELOG-IOS.md)**
 
 ---
