@@ -101,6 +101,10 @@ Te invitamos a suscribirte a nuestro canal oficial para mantenerte al día con l
 
 *En nuestro canal encontrarás listas de reproducción dedicadas a la instalación de la suite, uso de módulos de Android/iOS y demostraciones de recuperación de mensajes eliminados.*
 
+- Lanzamiento ForensiCore v3.0.0 => [Clic para ver el video](https://www.youtube.com/watch?v=n2w6BTI5MhQ&t=2030s?sub_confirmation=1)
+- Recuperacion de Mensajes Efimeros | ForensiCore v3.1.1 => [Clic para ver el video](https://www.youtube.com/watch?v=uv0N2mXbbQ4&t=21s?sub_confirmation=1)
+- Capacitacion v1.0.2 => [Clic para ver el video](https://www.youtube.com/watch?v=-yOoraEirv0&t=687s?sub_confirmation=1)
+
 ---
 
 ## 🎯 Configuracion Inicial
