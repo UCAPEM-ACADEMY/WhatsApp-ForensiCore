@@ -1,9 +1,14 @@
+<div align="center">
+
 # 🔍 WhatsApp ForensiCore | Solución de Análisis Forense Digital
+<h2>**For Android & iOS Ecosystems**</h2>
 
 [![License](https://img.shields.io/badge/License-Uso_Gratuito_No_Comercial-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-v.3.1.2-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey.svg)]()
 [![Tech Stack](https://img.shields.io/badge/Tech-Python%20%7C%20CustomTkinter%20%7C%20Google_AI-green.svg)]()
+
+</div>
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=n2w6BTI5MhQ&t=2742s&pp=ygUGdWNhcGVt" target="_blank">
@@ -25,17 +30,30 @@ Mantenemos un registro estricto de todas las mejoras, correcciones y nuevas herr
 
 ## 🛡️ Descripción y Valor Estratégico
 
-**WhatsApp ForensiCore** es una herramienta esencial de **Análisis Forense Digital** diseñada para la extracción, consolidación y presentación de evidencia proveniente de Archivos Incrementales de WhatsApp (Android).
+**WhatsApp ForensiCore** es una suite integral de informática forense diseñada específicamente para la adquisición, preservación, análisis profundo y reportabilidad de la evidencia digital proveniente de la aplicación de **mensajería WhatsApp**, en **Ecosistemas Android & iOS**. 
 
-El proyecto se enfoca en la **integridad probatoria** (**ISO 27037**) y la **trazabilidad del proceso** (**ISO 27043**), proporcionando a peritos judiciales y analistas una cadena de custodia clara, desde el descifrado hasta la generación del reporte final. Su arquitectura modular permite un análisis profundo, incluyendo la **recuperación de eventos de alto valor probatorio (AVE)** como mensajes eliminados y ediciones de contenido.
+El proyecto nace ante la necesidad de los peritos e investigadores de contar con una herramienta automatizada y robusta que permita no solo la lectura de bases de datos vivas, sino la recuperación de datos eliminados (mensajes efímeros, registros *tombstone*) y la interpretación de patrones conductuales mediante Inteligencia Artificial, manteniendo siempre inalterable la cadena de custodia y alineándose a las normativas internacionales **ISO/IEC 27037, 27042 y 27043**.
 
 Este es un **proyecto de código cerrado (Proprietary)**, ofrecido de forma **gratuita** para la comunidad educativa y de investigación, pero que requiere un código de registro para su uso profesional y comercial.
+
+---
+
+## 🔄 Ramas y Versiones del Sistema
+
+Nuestra arquitectura de desarrollo se divide en dos ramas principales, ambas con **actualizaciones periódicas y soporte continuo** para adaptarse a los constantes cambios de seguridad de Meta, Google y Apple:
+
+* 📱 **Versión 3.x.x (Android Edition):** Dedicada de forma exclusiva al ecosistema Android. Incluye módulos de extracción mediante Downgrade y E2EE, adquisición lógica (ADB/Tar), desencriptado de contenedores crypt14/crypt15 y *screencasting* forense de dispositivos Android.
+* 🍏 **Versión 4.x.x (Unified Android & iOS Edition):** La suite forense definitiva. Incluye todo el poder de la versión 3.x.x y añade soporte nativo completo para el ecosistema Apple (iOS). Permite extracciones lógicas vía iTunes (Protocolo AFC), exploración del *Domain Manifest*, *Unbacking* de copias de seguridad cifradas, y análisis nativo de la estructura `ChatStorage.sqlite`.
 
 ---
 
 ## ✨ Arquitectura y Alcance Funcional de WhatsApp ForensiCore
 
 WhatsApp ForensiCore ha evolucionado de un extractor de bases de datos a una Suite Forense Integral con capacidades de análisis heurístico, indexación avanzada, visión computacional y generación de dictámenes asistidos por IA. Todo el flujo de trabajo está alineado estrictamente a las normativas internacionales para el manejo de evidencia digital (ISO/IEC 27037, 27042 y 27043).
+
+### Ecosistemas
+* **Android:** Módulo de fijación de pantalla interactiva, extracción mediante técnicas de *Downgrade* forense (preservando datos de la aplicación sin acceso root) y adquisición de respaldos encriptados.
+* **iOS:** Adquisición lógica de respaldos (iTunes Backup), descifrado forense de contenedores locales, exploración de *Keychain* y extracción de estructuras *CoreData* aisladas.
 
 La interfaz y el motor interno se estructuran en cuatro módulos principales, diseñados para cubrir cada fase crítica del ciclo de vida de la respuesta a incidentes y el análisis forense móvil:
 
@@ -70,6 +88,18 @@ Integración de IA para soporte en la toma de decisiones, procesamiento multimed
 * **Visión Computacional (OpenCV):** Extracción automática de cuadros clave (frames) en videos recuperados para su indexación en el dictamen visual.
 * **Asistencia Pericial (Gemini 2.5 Flash):** Conexión vía API para análisis criminalístico de líneas de tiempo consolidadas. Aplica lógica investigativa para redactar resúmenes ejecutivos, evaluar la intencionalidad de ocultamiento, e identificar dinámicas de comunicación entre involucrados.
 * **Reporte AI Suplementario:** Generación de un anexo PDF independiente con las interpretaciones y conclusiones obtenidas por la IA, manteniendo la presentación de la evidencia cruda y principal estrictamente separada e inalterada.
+
+---
+
+## 📺 Capacitación y Tutoriales (Canal de YouTube)
+
+Para aprovechar al máximo el potencial de WhatsApp ForensiCore, publicamos regularmente guías de uso, casos de estudio prácticos y tutoriales sobre metodología forense. 
+
+Te invitamos a suscribirte a nuestro canal oficial para mantenerte al día con las últimas actualizaciones:
+
+👉 **[Visita el Canal de UCAPEM Group en YouTube](https://www.youtube.com/@UCAPEMGroup)**
+
+*En nuestro canal encontrarás listas de reproducción dedicadas a la instalación de la suite, uso de módulos de Android/iOS y demostraciones de recuperación de mensajes eliminados.*
 
 ---
 
