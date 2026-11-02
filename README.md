@@ -213,13 +213,13 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
     <td align="center">
       <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
-      <small>Donativo $250</small><br>
+      <small>Donativo $300</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
-      <small>Donativo $300</small><br>
+      <small>Donativo $350</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
   </tr>
