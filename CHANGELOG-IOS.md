@@ -3,6 +3,78 @@
 Todas las actualizaciones notables de WhatsApp ForensiCore se documentarán en este archivo. 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [4.1.1.0] - 2026-11-02
+Versión centrada en el **informe pericial** (reportes PDF/HTML con cadena de custodia, sello de tiempo y verificación por QR), un **menú de configuración** más completo, el **visor forense**, y el endurecimiento de la **adquisición remota** y de **WhatsApp Web en vivo**, con correcciones en los subsistemas iOS y Android.
+
+## 🚀 Nuevos Módulos y Mejoras Mayores
+
+### 1. Generación de Reportes Forenses (PDF y HTML)
+- **Informe pericial en dos formatos:** generación de reportes forenses completos en **PDF** y **HTML**, con línea de tiempo, clasificación de eventos y anexos.
+- **Cadena de custodia criptográfica:** cada evidencia incluida se respalda con **firmas de integridad (SHA-256 y SHA-512)** y declaraciones de cumplimiento conforme a **ISO/IEC 27037**, garantizando la inmutabilidad de la evidencia original.
+- **Sello de fecha y hora:** cada informe queda sellado con su marca temporal de generación y una huella criptográfica propia del documento.
+- **Validación de autenticidad por código QR:** cada reporte incorpora un **código QR** que permite validar en línea la **autenticidad e integridad** del informe, confirmando que no ha sido alterado desde su emisión.
+- **Informes por contacto y consolidado:** generación individual por conversación o un informe global de todos los contactos del caso.
+
+### 2. Enriquecimiento Cruzado de Contactos — Visor Forense
+- **Reconstrucción automática de identidades:** cuando la adquisición solo expone números de teléfono (sin nombres ni fotos), el visor correlaciona y completa automáticamente los nombres y alias faltantes a partir de las fuentes disponibles del propio caso.
+- **Operación de solo lectura:** el proceso nunca modifica la evidencia original; completa únicamente los datos ausentes (*gap-fill*) sin sobrescribir información existente.
+- **Trazabilidad:** las fuentes utilizadas quedan registradas en el log pericial con su huella de integridad.
+
+### 3. Adquisición de WhatsApp Web (Sesión en Vivo)
+- **Autodetección de perfiles** y selección guiada del origen de datos de la sesión web.
+- **Reconstrucción de mensajes en reposo** de la sesión capturada.
+- **Rescate de multimedia efímera ("Ver una vez")** desde el contenido residual de la sesión.
+- **Registro de auditoría** de la sesión adquirida, con su correspondiente cadena de custodia.
+
+### 4. Extracción Remota Cifrada (Android + iOS)
+- **Agentes remotos** para Android e iOS y **túnel cifrado punto a punto:** el dispositivo remoto se detecta como si estuviera conectado físicamente al equipo del perito.
+- **Restauración segura del entorno** al cerrar la sesión remota, dejando el equipo del perito en estado consistente.
+- **Mayor estabilidad** en la captura y el espejo forense en vivo de dispositivos iOS recientes durante sesiones remotas.
+
+## ⚙️ Menú de Configuración
+
+El panel de configuración se amplía con nuevas opciones personalizables por el perito:
+
+- **Logotipo institucional para reportes PDF:** permite subir el logotipo de la unidad o institución, que se mostrará únicamente en los informes PDF. *(La marca oficial del programa permanece fija e inalterable.)*
+- **Clave de IA (Gemini):** registro de la credencial para habilitar el asistente de interpretación pericial asistida por IA.
+- **Modelo de transcripción de audio:** selección del nivel del motor de transcripción (desde ligero hasta máxima precisión) según la capacidad del equipo.
+- **Normativa legal y párrafos personalizados:** permite crear y almacenar bloques de texto reutilizables (metodología aplicada, cumplimiento normativo, glosario técnico-legal, artículos y leyes locales) listos para insertarse en los informes.
+- **Configuración de red y proxies:** evita bloqueos al descargar evidencia multimedia, con modos desactivado, automático y personalizado, y prueba de conectividad.
+
+## 🔎 Visor Forense (Android + iOS)
+
+- **Transcripción con IA integrada** para notas de voz y mensajes de video, con transcripción bajo demanda y caché por mensaje.
+- **Columna del listado de contactos más ancha**, para mostrar nombres largos sin truncar.
+- **Enriquecimiento cruzado de contactos** integrado al flujo de apertura del chat (ver Nuevos Módulos).
+- **Mejor gestión de memoria** al alternar entre conversaciones con miles de mensajes y miniaturas.
+
+## 🔧 Actualizaciones y Correcciones Críticas
+
+### 🤖 Entorno Android
+
+- **Extracción universal de Encuestas (Polls):**
+  - **Problema:** la extracción de encuestas fallaba en versiones recientes de WhatsApp.
+  - **Solución:** detección automática de la estructura de la base de datos, de modo que las encuestas (título y opciones) se extraen correctamente **en cualquier versión** del esquema, antiguo o nuevo.
+
+- **Informe Forense Consolidado ("[TODOS]"):**
+  - **Problema:** la generación del informe de todos los contactos (PDF y HTML) se interrumpía por un error interno.
+  - **Solución:** corregida la consolidación de eventos; el informe global vuelve a generarse de forma estable en ambos formatos.
+
+### 📱 Entorno iOS
+
+- **Portabilidad de la extracción remota:**
+  - **Problema:** la extracción remota dependía de una ubicación de instalación fija.
+  - **Solución:** ahora funciona con el programa instalado en **cualquier unidad o carpeta**.
+- **Transcripción con IA** disponible también para audios y video en el visor iOS, respetando la línea de tiempo nativa del sistema.
+
+### 🧩 Mejoras Transversales (iOS + Android)
+
+- **Mayor robustez de la versión compilada** para Windows, con un arranque más estable y un registro de diagnóstico más fiable.
+- **Eliminación de rutas fijas** en todo el sistema, para garantizar la portabilidad de la instalación entre equipos y unidades.
+- **Compatibilidad universal de esquemas:** el procesamiento se adapta automáticamente a distintas versiones de las bases de datos de WhatsApp.
+
+--- 
+
 ## [4.1.0] - 2026-07-14
 ## 🚀 Nuevos Módulos
 
