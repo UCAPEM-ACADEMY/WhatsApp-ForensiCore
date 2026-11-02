@@ -113,6 +113,7 @@ Te invitamos a suscribirte a nuestro canal oficial para mantenerte al día con l
 
 *En nuestro canal encontrarás listas de reproducción dedicadas a la instalación de la suite, uso de módulos de Android/iOS y demostraciones de recuperación de mensajes eliminados.*
 
+- Lanzamiento ForensiCore v4.1.1.0 => [Clic para ver el video](https://youtube.com/live/_bl06CL4yow?sub_confirmation=1)
 - Lanzamiento ForensiCore v3.0.0 => [Clic para ver el video](https://www.youtube.com/watch?v=n2w6BTI5MhQ&t=2030s?sub_confirmation=1)
 - Recuperacion de Mensajes Efimeros | ForensiCore v3.1.1 => [Clic para ver el video](https://www.youtube.com/watch?v=uv0N2mXbbQ4&t=21s?sub_confirmation=1)
 - Capacitacion v1.0.2 => [Clic para ver el video](https://www.youtube.com/watch?v=-yOoraEirv0&t=687s?sub_confirmation=1)
@@ -200,25 +201,25 @@ Haga clic en el botón de abajo para realizar su donación y obtener su código 
     <td align="center">
       <b>ForensiCore V3.x.x</b><br>
       <small>Android</small><br>
-      <small>Donativo $100</small><br>
+      <small>Donativo $180</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V3.x.x</b><br>
       <small>Android</small><br>
-      <small>Donativo $130</small><br>
+      <small>Donativo $220</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
-      <small>Donativo $150</small><br>
+      <small>Donativo $250</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
     <td align="center">
       <b>ForensiCore V4.x.x</b><br>
       <small>Android - iOS</small><br>
-      <small>Donativo $180</small><br>
+      <small>Donativo $300</small><br>
       <small>Actualizaciones Periódicas</small>
     </td>
   </tr>
