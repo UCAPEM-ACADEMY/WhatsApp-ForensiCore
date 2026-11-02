@@ -11,10 +11,10 @@
 </div>
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=n2w6BTI5MhQ&t=2742s&pp=ygUGdWNhcGVt" target="_blank">
+  <a href="https://www.youtube.com/live/_bl06CL4yow?si=sCdJ5cFGBkpiTYEr" target="_blank">
     <img src="https://ucapem.group/wp-content/uploads/2026/04/ForensiCore-4.png" alt="Ver Demo de ForensiCore" width="1020"/>
   </a>
-  <p><strong>🎥 Video - Lanzamiento WhatsApp ForensiCore v3.0.0</strong></p>
+  <p><strong>🎥 Video - Lanzamiento WhatsApp ForensiCore v4.1.1.0</strong></p>
 </div>
 
 ---
@@ -49,45 +49,57 @@ Nuestra arquitectura de desarrollo se divide en dos ramas principales, ambas con
 
 ## ✨ Arquitectura y Alcance Funcional de WhatsApp ForensiCore
 
-WhatsApp ForensiCore ha evolucionado de un extractor de bases de datos a una Suite Forense Integral con capacidades de análisis heurístico, indexación avanzada, visión computacional y generación de dictámenes asistidos por IA. Todo el flujo de trabajo está alineado estrictamente a las normativas internacionales para el manejo de evidencia digital (ISO/IEC 27037, 27042 y 27043).
+WhatsApp ForensiCore ha evolucionado de un simple extractor de bases de datos a una **Suite Forense Integral** con capacidades de análisis heurístico, indexación avanzada, visión computacional, reconstrucción de identidades y generación de dictámenes asistidos por IA. Cada informe que produce es **verificable públicamente** mediante código QR y queda blindado por una cadena de custodia criptográfica. Todo el flujo de trabajo está alineado estrictamente a las normativas internacionales para el manejo de evidencia digital (**ISO/IEC 27037, 27042 y 27043**).
 
-### Ecosistemas
-* **Android:** Módulo de fijación de pantalla interactiva, extracción mediante técnicas de *Downgrade* forense (preservando datos de la aplicación sin acceso root) y adquisición de respaldos encriptados.
-* **iOS:** Adquisición lógica de respaldos (iTunes Backup), descifrado forense de contenedores locales, exploración de *Keychain* y extracción de estructuras *CoreData* aisladas.
+### Ecosistemas Soportados
+* **Android:** fijación de pantalla interactiva, extracción mediante técnicas de *Downgrade* forense (preservando los datos de la aplicación sin acceso root) y adquisición de respaldos cifrados.
+* **iOS:** adquisición lógica de respaldos (iTunes Backup), descifrado forense de contenedores locales, exploración de *Keychain* y extracción de estructuras *CoreData* aisladas.
+* **WhatsApp Web (Sesión en Vivo):** adquisición forense de la sesión web activa, reconstrucción de mensajes en reposo y rescate de multimedia efímera desde el contenido residual de la sesión.
+* **Adquisición Remota Cifrada (multiplataforma):** mediante un túnel cifrado punto a punto, el dispositivo remoto se detecta y procesa como si estuviera conectado físicamente al equipo del perito.
+
+### 🔐 Modelo de Licenciamiento
+ForensiCore opera en dos niveles. La **Edición Base** cubre el flujo completo de adquisición, análisis y reporte. Los módulos marcados con **🔒 (Edición Profesional)** —capacidades de recuperación profunda, exportación para eDiscovery y personalización institucional— se **desbloquean con un código de registro**, habilitando el máximo potencial de la suite.
+
+---
 
 La interfaz y el motor interno se estructuran en cuatro módulos principales, diseñados para cubrir cada fase crítica del ciclo de vida de la respuesta a incidentes y el análisis forense móvil:
 
 ### 📱 1. Módulo de Adquisición Avanzada y Entorno Seguro
-Este módulo se enfoca en la extracción física/lógica, la preparación de la evidencia y el aislamiento seguro del caso:
-* **Gestión Pericial:** Registro de metadatos del caso (Nombre del Perito, Número de Caso, Credenciales) que blindan la cadena de custodia desde el primer clic.
-* **Bypass de Sandbox (APK Downgrade Automatizado):** Orquestación segura vía ADB para Android 11+ (sin necesidad de Root). Degrada temporalmente la aplicación a una versión heredada para forzar la habilitación del adb backup, extrayendo el contenedor cifrado (/data/data/com.whatsapp) y la llave criptográfica (key), preservando intactos los datos del usuario.
-* **Extracción E2EE:** Captura nativa de copias de seguridad con cifrado de extremo a extremo.
-* **Aislamiento en Montaje VHD:** Aislamiento de la evidencia cruda en discos virtuales cifrados (Datos.vhd) para prevenir la contaminación de hashes por el sistema operativo anfitrión.
-* **Radar Anti-Mod y Telemetría:** Detección automática de entornos de "Perfiles de Trabajo" y aplicaciones clonadas o no oficiales (WhatsApp Plus, GBWhatsApp).
+Extracción física/lógica, preparación de la evidencia y aislamiento seguro del caso:
+* **Gestión Pericial:** registro de metadatos del caso (perito, número de caso, credenciales) que blindan la cadena de custodia desde el primer clic.
+* **Bypass de Sandbox (APK Downgrade Automatizado):** orquestación segura para Android 11+ **sin necesidad de Root**. Degrada temporalmente la aplicación a una versión heredada para habilitar el respaldo, extrayendo el contenedor cifrado de la aplicación y su material criptográfico asociado, **preservando intactos los datos del usuario**.
+* **Extracción E2EE:** captura nativa de copias de seguridad con cifrado de extremo a extremo.
+* **Aislamiento en Montaje VHD:** la evidencia cruda se aísla en discos virtuales cifrados (VHD) para prevenir la contaminación de hashes por el sistema operativo anfitrión.
+* **Radar Anti-Mod y Telemetría:** detección automática de "Perfiles de Trabajo" y de aplicaciones clonadas o no oficiales (WhatsApp Plus, GBWhatsApp, variantes Business).
 
 ### 🔎 2. Módulo de Análisis, Deep Carving y Recuperación
-El núcleo heurístico del análisis forense. Este módulo procesa las bases de datos y la memoria residual para resucitar evidencia:
-* **Manejo Dinámico de DBs:** Lectura de bases de datos vivas (msgstore.db), archivos incrementales, y sus respectivos archivos de registro transaccional (-wal y -shm).
-* **Deep Carving y Triage Volumétrico:** **(Solo Usuarios Registrados)** Motor avanzado de búsqueda en espacio no asignado (Free-Pages) y memoria transaccional para el rescate binario crudo de textos e imágenes RAW eliminadas.
-* **Resurrección Efímera ("Ver una vez"):** Reconstrucción criptográfica y conexión a los servidores de Meta (mmg.whatsapp.net) mediante derivación de llaves HKDF.
-* **Key Hunting (Fuerza Bruta MAC):** Algoritmos avanzados para rescatar llaves multimedia huérfanas de mensajes destruidos, restaurando la extensión real de archivos corruptos mediante la lectura de Magic Bytes.
-* **Filtro Forense Anti-Ruido Máximo:** Motor heurístico que detecta y destruye código residual SQLite, índices FTS, JSON, vCards y enlaces de enrutamiento interno de Meta, evitando falsos positivos en la tabla de textos huérfanos.
-* **Consolidación Cronológica (Eventos AVE):** Combina y unifica mensajes, llamadas, geolocalizaciones y participantes en una sola línea de tiempo inmutable.
+El núcleo heurístico del análisis forense: procesa las bases de datos y la memoria residual para resucitar evidencia:
+* **Manejo Dinámico de Bases de Datos:** lectura de bases vivas, archivos incrementales y sus respectivos registros transaccionales (WAL/SHM), preservando la volatilidad de los mensajes eliminados y efímeros.
+* **Reconstrucción Automática de Identidades (Enriquecimiento Cruzado):** cuando la adquisición solo expone números de teléfono, el sistema correlaciona y completa automáticamente nombres y alias desde las fuentes disponibles del propio caso, en modo de solo lectura y sin sobrescribir datos existentes.
+* **🔒 Deep Carving y Triage Volumétrico:** motor avanzado de búsqueda en espacio no asignado (*Free-Pages*) y memoria transaccional para el rescate binario crudo de textos e imágenes eliminadas.
+* **Resurrección Efímera ("Ver una vez"):** reconstrucción criptográfica y recuperación segura de contenido efímero mediante derivación de llaves.
+* **🔒 Key Hunting (Rescate de Llaves Multimedia):** algoritmos avanzados para recuperar llaves multimedia huérfanas de mensajes destruidos, restaurando la extensión real de archivos corruptos mediante la lectura de *Magic Bytes*.
+* **Filtro Forense Anti-Ruido:** motor heurístico que detecta y descarta código residual de base de datos, índices de búsqueda, estructuras de datos y enlaces de enrutamiento interno, evitando falsos positivos en la tabla de textos huérfanos.
+* **Consolidación Cronológica (Eventos AVE):** combina y unifica mensajes, llamadas, geolocalizaciones y participantes en una sola línea de tiempo inmutable.
+* **Compatibilidad Universal de Esquemas:** el procesamiento se adapta automáticamente a cualquier versión de las bases de datos de WhatsApp, antiguas o recientes, incluyendo la correcta extracción de encuestas (polls).
 
 ### 📄 3. Módulo de Trazabilidad, Exportación y Reportes
-Responsable de la documentación y presentación final de la evidencia bajo estándares de calidad judicial:
-* **Visor HTML Interactivo:** Nuevo motor offline que genera dictámenes web responsivos, incluyendo galerías visuales de evidencia efímera, reproductores multimedia integrados y alertas visuales para imágenes RAW corruptas.
-* **Generación de Dictámenes PDF:** Creación de reportes periciales formales. Incluye tablas de triage volumétrico (conteo de Tombstones/Free-Pages) y truncamiento inteligente de mensajes extensos con derivación a CSV.
-* **Exportación de Datos Crudos:** **(Solo Usuarios Registrados)** Salida de la línea de tiempo completa a formatos planos (CSV, JSON) para su ingesta en plataformas de eDiscovery de terceros (ej. Nuix, EnCase).
-* **Auditoría Estricta (ISO 27043):** Archivo audit_log.txt inmutable en la raíz del caso que registra cada clic, módulo ejecutado y error del perito, garantizando la trazabilidad total sin contaminar los subdirectorios de extracción.
-* **Integración Nativa con IPED:** ForensiCore actúa como orquestador directo para IPED (Digital Evidence Processor and Indexer). Aísla automáticamente los directorios de evidencia pura (Smart Exclusion) para aplicar OCR y búsqueda de expresiones regulares optimizando CPU/RAM.
+Documentación y presentación final de la evidencia bajo estándares de calidad judicial:
+* **Reportes con Verificación de Autenticidad por QR:** cada dictamen (PDF y HTML) incorpora un **sello de fecha y hora**, una **huella criptográfica propia** y un **código QR** que permite validar en línea que el informe **no ha sido alterado** desde su emisión.
+* **Cadena de Custodia Criptográfica:** toda evidencia incluida se respalda con firmas de integridad **SHA-256 y SHA-512** y declaraciones de cumplimiento conforme a ISO/IEC 27037.
+* **Visor HTML Interactivo:** motor offline que genera dictámenes web responsivos, con galerías de evidencia efímera, reproductores multimedia integrados y alertas visuales para imágenes corruptas.
+* **Generación de Dictámenes PDF:** reportes periciales formales, con tablas de triage volumétrico, truncamiento inteligente de mensajes extensos e informes individuales por contacto o consolidados de todo el caso.
+* **Personalización Institucional:** 🔒 inserción del logotipo de la unidad en los reportes PDF y bloques reutilizables de normativa legal, metodología y glosario técnico-legal (la marca oficial del programa permanece fija e inalterable).
+* **🔒 Exportación de Datos Crudos:** salida de la línea de tiempo completa a formatos planos (CSV, JSON) para su ingesta en plataformas de eDiscovery de terceros (p. ej. Nuix, EnCase).
+* **Auditoría Estricta (ISO 27043):** registro de auditoría inmutable en la raíz del caso que documenta cada módulo ejecutado y acción del perito, garantizando la trazabilidad total sin contaminar los subdirectorios de extracción.
+* **Integración Nativa con IPED:** ForensiCore orquesta directamente IPED, aislando automáticamente los directorios de evidencia pura (*Smart Exclusion*) para aplicar OCR y búsqueda por expresiones regulares optimizando CPU/RAM.
 
 ### 🧠 4. Módulo de Inteligencia Artificial Forense (Offline/Online)
-Integración de IA para soporte en la toma de decisiones, procesamiento multimedia y análisis de grandes volúmenes de datos:
-* **Procesamiento NLP Local (Whisper AI):** Motor de transcripción local (CPU int8) que convierte notas de voz y llamadas (OGG/M4A/MP3) a texto de forma 100% autónoma y offline, sin comprometer la confidencialidad de la evidencia enviándola a la nube.
-* **Visión Computacional (OpenCV):** Extracción automática de cuadros clave (frames) en videos recuperados para su indexación en el dictamen visual.
-* **Asistencia Pericial (Gemini 2.5 Flash):** Conexión vía API para análisis criminalístico de líneas de tiempo consolidadas. Aplica lógica investigativa para redactar resúmenes ejecutivos, evaluar la intencionalidad de ocultamiento, e identificar dinámicas de comunicación entre involucrados.
-* **Reporte AI Suplementario:** Generación de un anexo PDF independiente con las interpretaciones y conclusiones obtenidas por la IA, manteniendo la presentación de la evidencia cruda y principal estrictamente separada e inalterada.
+IA aplicada al soporte de decisiones, el procesamiento multimedia y el análisis de grandes volúmenes de datos:
+* **Procesamiento NLP Local (Whisper):** transcripción local y **100% offline** de notas de voz, llamadas y mensajes de video a texto, sin enviar la evidencia a la nube; con transcripción bajo demanda, caché por mensaje y nivel de precisión configurable.
+* **Visión Computacional:** extracción automática de cuadros clave (*frames*) en videos recuperados para su indexación en el dictamen visual.
+* **Asistencia Pericial (Gemini):** análisis criminalístico de líneas de tiempo consolidadas que redacta resúmenes ejecutivos, evalúa la intencionalidad de ocultamiento e identifica dinámicas de comunicación entre involucrados.
+* **Reporte de IA Suplementario:** anexo PDF independiente con las interpretaciones de la IA, manteniendo la evidencia cruda y principal **estrictamente separada e inalterada**.
 
 ---
 
