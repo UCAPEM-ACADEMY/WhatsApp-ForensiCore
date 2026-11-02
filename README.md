@@ -12,7 +12,7 @@
 
 <div align="center">
   <a href="https://www.youtube.com/live/_bl06CL4yow?si=sCdJ5cFGBkpiTYEr" target="_blank">
-    <img src="https://ucapem.group/wp-content/uploads/2026/04/ForensiCore-4.png" alt="Ver Demo de ForensiCore" width="1020"/>
+    <img src="https://ucapem.group/wp-content/uploads/2026/11/ForensiCore_v4.1.1.0.png" alt="Ver Demo de ForensiCore" width="1020"/>
   </a>
   <p><strong>🎥 Video - Lanzamiento WhatsApp ForensiCore v4.1.1.0</strong></p>
 </div>
